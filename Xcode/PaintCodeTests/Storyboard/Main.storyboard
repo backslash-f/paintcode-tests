@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock Hand View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ClockHandViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymb-b3-ucr" customClass="ClockHandView" customModule="PaintCodeTests" customModuleProvider="target">
+                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="85F-u0-au9"/>
+                                    <constraint firstAttribute="height" constant="200" id="ffP-PR-yeo"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID of touched view (from PaintCode): 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLW-vj-x6v" userLabel="Touched View ID">
+                                <rect key="frame" x="16" y="469" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ymb-b3-ucr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Mv-jv-apZ"/>
+                            <constraint firstItem="PLW-vj-x6v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SHq-iI-mbf"/>
+                            <constraint firstItem="PLW-vj-x6v" firstAttribute="top" secondItem="ymb-b3-ucr" secondAttribute="bottom" constant="35.5" id="T3m-Gs-uYS"/>
+                            <constraint firstItem="ymb-b3-ucr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XCu-S0-57D"/>
+                            <constraint firstItem="PLW-vj-x6v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7J-48-er2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PLW-vj-x6v" secondAttribute="trailing" id="g1C-9N-a0f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clockHandView" destination="ymb-b3-ucr" id="hFi-0I-sV5"/>
+                        <outlet property="touchedViewIDLabel" destination="PLW-vj-x6v" id="6Ij-le-RJE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.19999999999999" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>

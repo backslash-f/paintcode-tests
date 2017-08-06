@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED15D6F91F36A41D0031E0BC /* ClockHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D6F81F36A41D0031E0BC /* ClockHandView.swift */; };
+		ED15D6FE1F36A4540031E0BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D6FA1F36A4540031E0BC /* AppDelegate.swift */; };
+		ED15D6FF1F36A4540031E0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED15D6FB1F36A4540031E0BC /* Assets.xcassets */; };
+		ED15D7011F36A4540031E0BC /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D6FD1F36A4540031E0BC /* StyleKit.swift */; };
+		ED15D7041F36A4600031E0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED15D7021F36A4600031E0BC /* LaunchScreen.storyboard */; };
+		ED15D7051F36A4600031E0BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED15D7031F36A4600031E0BC /* Main.storyboard */; };
+		ED15D7071F36A46F0031E0BC /* ClockHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D7061F36A46F0031E0BC /* ClockHandViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED15D6DD1F3690AC0031E0BC /* PaintCodeTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintCodeTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED15D6F81F36A41D0031E0BC /* ClockHandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockHandView.swift; path = PaintCodeTests/View/ClockHandView.swift; sourceTree = SOURCE_ROOT; };
+		ED15D6FA1F36A4540031E0BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PaintCodeTests/Resources/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		ED15D6FB1F36A4540031E0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PaintCodeTests/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		ED15D6FC1F36A4540031E0BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PaintCodeTests/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		ED15D6FD1F36A4540031E0BC /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleKit.swift; path = PaintCodeTests/Resources/StyleKit.swift; sourceTree = SOURCE_ROOT; };
+		ED15D7021F36A4600031E0BC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PaintCodeTests/Storyboard/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		ED15D7031F36A4600031E0BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = PaintCodeTests/Storyboard/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		ED15D7061F36A46F0031E0BC /* ClockHandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockHandViewController.swift; path = PaintCodeTests/Controller/ClockHandViewController.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED15D6DA1F3690AC0031E0BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED15D6D41F3690AC0031E0BC = {
+			isa = PBXGroup;
+			children = (
+				ED15D6F21F3693AE0031E0BC /* Model */,
+				ED15D6F31F3693B70031E0BC /* View */,
+				ED15D6DF1F3690AC0031E0BC /* Controller */,
+				ED15D6F41F3693C70031E0BC /* Storyboard */,
+				ED15D6F51F3693E10031E0BC /* Resources */,
+				ED15D6DE1F3690AC0031E0BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED15D6DE1F3690AC0031E0BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED15D6DD1F3690AC0031E0BC /* PaintCodeTests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED15D6DF1F3690AC0031E0BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ED15D7061F36A46F0031E0BC /* ClockHandViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ED15D6F21F3693AE0031E0BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED15D6F31F3693B70031E0BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED15D6F81F36A41D0031E0BC /* ClockHandView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED15D6F41F3693C70031E0BC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ED15D7021F36A4600031E0BC /* LaunchScreen.storyboard */,
+				ED15D7031F36A4600031E0BC /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ED15D6F51F3693E10031E0BC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED15D6FA1F36A4540031E0BC /* AppDelegate.swift */,
+				ED15D6FB1F36A4540031E0BC /* Assets.xcassets */,
+				ED15D6FC1F36A4540031E0BC /* Info.plist */,
+				ED15D6FD1F36A4540031E0BC /* StyleKit.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED15D6DC1F3690AC0031E0BC /* PaintCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED15D6EF1F3690AC0031E0BC /* Build configuration list for PBXNativeTarget "PaintCodeTests" */;
+			buildPhases = (
+				ED15D6D91F3690AC0031E0BC /* Sources */,
+				ED15D6DA1F3690AC0031E0BC /* Frameworks */,
+				ED15D6DB1F3690AC0031E0BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaintCodeTests;
+			productName = PaintCodeTests;
+			productReference = ED15D6DD1F3690AC0031E0BC /* PaintCodeTests.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED15D6D51F3690AC0031E0BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "backslash-f";
+				TargetAttributes = {
+					ED15D6DC1F3690AC0031E0BC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UKS358BH88;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ED15D6D81F3690AC0031E0BC /* Build configuration list for PBXProject "PaintCodeTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED15D6D41F3690AC0031E0BC;
+			productRefGroup = ED15D6DE1F3690AC0031E0BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED15D6DC1F3690AC0031E0BC /* PaintCodeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED15D6DB1F3690AC0031E0BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED15D7041F36A4600031E0BC /* LaunchScreen.storyboard in Resources */,
+				ED15D6FF1F36A4540031E0BC /* Assets.xcassets in Resources */,
+				ED15D7051F36A4600031E0BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED15D6D91F3690AC0031E0BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED15D6FE1F36A4540031E0BC /* AppDelegate.swift in Sources */,
+				ED15D6F91F36A41D0031E0BC /* ClockHandView.swift in Sources */,
+				ED15D7071F36A46F0031E0BC /* ClockHandViewController.swift in Sources */,
+				ED15D7011F36A4540031E0BC /* StyleKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED15D6ED1F3690AC0031E0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED15D6EE1F3690AC0031E0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED15D6F01F3690AC0031E0BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKS358BH88;
+				INFOPLIST_FILE = "$(SRCROOT)/PaintCodeTests/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.PaintCodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ED15D6F11F3690AC0031E0BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UKS358BH88;
+				INFOPLIST_FILE = "$(SRCROOT)/PaintCodeTests/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.PaintCodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED15D6D81F3690AC0031E0BC /* Build configuration list for PBXProject "PaintCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED15D6ED1F3690AC0031E0BC /* Debug */,
+				ED15D6EE1F3690AC0031E0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED15D6EF1F3690AC0031E0BC /* Build configuration list for PBXNativeTarget "PaintCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED15D6F01F3690AC0031E0BC /* Debug */,
+				ED15D6F11F3690AC0031E0BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED15D6D51F3690AC0031E0BC /* Project object */;
+}
