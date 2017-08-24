@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,27 +10,89 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Clock Hand View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main View Controller-->
+        <scene sceneID="BcO-z2-GSD">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ClockHandViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FsF-s1-pyG" customClass="MainViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Vw6-x4-Xt7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pn6-E8-iYx"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="FJX-Zi-Jaj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymb-b3-ucr" customClass="ClockHandView" customModule="PaintCodeTests" customModuleProvider="target">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-jc-ZcQ">
+                                <rect key="frame" x="116" y="293.5" width="142" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-qr-vyq">
+                                        <rect key="frame" x="25" y="0.0" width="92" height="30"/>
+                                        <state key="normal" title="Test Collision"/>
+                                        <connections>
+                                            <segue destination="3o9-9N-m9o" kind="show" id="IOS-ev-5Bc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-ea-c0S">
+                                        <rect key="frame" x="0.0" y="50" width="142" height="30"/>
+                                        <state key="normal" title="Test Dynamic Colors"/>
+                                        <connections>
+                                            <segue destination="du8-3p-Jqr" kind="show" id="g8w-IC-W2P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u7B-jc-ZcQ" firstAttribute="centerX" secondItem="FJX-Zi-Jaj" secondAttribute="centerX" id="90E-07-9SN"/>
+                            <constraint firstItem="u7B-jc-ZcQ" firstAttribute="centerY" secondItem="FJX-Zi-Jaj" secondAttribute="centerY" id="PQa-XW-E2B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7fU-uV-Uv3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2K-Ed-yGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.79999999999995" y="334.18290854572717"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xlj-i8-25u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DK0-Uu-XrP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ftW-XF-cg2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FsF-s1-pyG" kind="relationship" relationship="rootViewController" id="U1T-Wg-YcF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3C-ok-LDx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="334"/>
+        </scene>
+        <!--Collisions-->
+        <scene sceneID="gsI-0X-IUz">
+            <objects>
+                <viewController id="3o9-9N-m9o" customClass="ClockHandViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="POE-Wz-lpE"/>
+                        <viewControllerLayoutGuide type="bottom" id="wPQ-KB-zjm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FFl-kt-Wpa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-ie-kLc" customClass="ClockHandView" customModule="PaintCodeTests" customModuleProvider="target">
                                 <rect key="frame" x="87" y="233.5" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="85F-u0-au9"/>
-                                    <constraint firstAttribute="height" constant="200" id="ffP-PR-yeo"/>
+                                    <constraint firstAttribute="height" constant="200" id="asd-YB-IDp"/>
+                                    <constraint firstAttribute="width" constant="200" id="f7C-qk-rSZ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID of touched view (from PaintCode): 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLW-vj-x6v" userLabel="Touched View ID">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID of touched view (from PaintCode): 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnz-GT-Ayv" userLabel="Touched View ID">
                                 <rect key="frame" x="16" y="469" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -39,22 +101,107 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ymb-b3-ucr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3Mv-jv-apZ"/>
-                            <constraint firstItem="PLW-vj-x6v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SHq-iI-mbf"/>
-                            <constraint firstItem="PLW-vj-x6v" firstAttribute="top" secondItem="ymb-b3-ucr" secondAttribute="bottom" constant="35.5" id="T3m-Gs-uYS"/>
-                            <constraint firstItem="ymb-b3-ucr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XCu-S0-57D"/>
-                            <constraint firstItem="PLW-vj-x6v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7J-48-er2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PLW-vj-x6v" secondAttribute="trailing" id="g1C-9N-a0f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnz-GT-Ayv" secondAttribute="trailing" id="2v0-2T-M9f"/>
+                            <constraint firstItem="N3b-ie-kLc" firstAttribute="centerY" secondItem="FFl-kt-Wpa" secondAttribute="centerY" id="ENI-Ac-RVC"/>
+                            <constraint firstItem="xnz-GT-Ayv" firstAttribute="top" secondItem="N3b-ie-kLc" secondAttribute="bottom" constant="35.5" id="eQZ-D7-LRi"/>
+                            <constraint firstItem="N3b-ie-kLc" firstAttribute="centerX" secondItem="FFl-kt-Wpa" secondAttribute="centerX" id="o6d-yC-MjC"/>
+                            <constraint firstItem="xnz-GT-Ayv" firstAttribute="leading" secondItem="FFl-kt-Wpa" secondAttribute="leadingMargin" id="qOs-fq-NCZ"/>
+                            <constraint firstItem="xnz-GT-Ayv" firstAttribute="centerX" secondItem="FFl-kt-Wpa" secondAttribute="centerX" id="tqV-2G-W9A"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Collisions" id="nXn-7k-rg1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ZoW-st-3H9"/>
+                    </navigationItem>
                     <connections>
-                        <outlet property="clockHandView" destination="ymb-b3-ucr" id="hFi-0I-sV5"/>
-                        <outlet property="touchedViewIDLabel" destination="PLW-vj-x6v" id="6Ij-le-RJE"/>
+                        <outlet property="clockHandView" destination="N3b-ie-kLc" id="bX5-pH-c8O"/>
+                        <outlet property="touchedViewIDLabel" destination="xnz-GT-Ayv" id="arD-1I-ZRY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AkW-zc-byH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-335.19999999999999" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1884" y="56"/>
+        </scene>
+        <!--Dynamic Colors-->
+        <scene sceneID="2rQ-3c-6M9">
+            <objects>
+                <viewController id="du8-3p-Jqr" customClass="TreeViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SN0-4c-Fkk"/>
+                        <viewControllerLayoutGuide type="bottom" id="R1g-wy-Lfa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cJ8-y5-bdY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb7-Dc-oPq" customClass="TreeView" customModule="PaintCodeTests" customModuleProvider="target">
+                                <rect key="frame" x="37" y="162" width="300" height="342"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="l0w-ij-EK2"/>
+                                    <constraint firstAttribute="height" constant="342" id="tqW-F4-897"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="redColor">
+                                        <real key="value" value="0.80800000000000005"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="greenColor">
+                                        <real key="value" value="0.80800000000000005"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="blueColor">
+                                        <real key="value" value="0.80800000000000005"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="alphaColor">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-cU-N9Q" userLabel="Buttons Stack View">
+                                <rect key="frame" x="56" y="524" width="263" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-91-xjO" userLabel="Color01">
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="colorButtonPressed:" destination="du8-3p-Jqr" eventType="touchUpInside" id="iZJ-4p-CGj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3j-P3-aUQ" userLabel="Color02">
+                                        <rect key="frame" x="94.5" y="0.0" width="74" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="colorButtonPressed:" destination="du8-3p-Jqr" eventType="touchUpInside" id="TPc-ad-EvB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-UY-24S" userLabel="Color03">
+                                        <rect key="frame" x="188.5" y="0.0" width="74.5" height="44"/>
+                                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="colorButtonPressed:" destination="du8-3p-Jqr" eventType="touchUpInside" id="Nci-aZ-AYP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="MxB-nw-HRA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Coa-cU-N9Q" firstAttribute="leading" secondItem="cJ8-y5-bdY" secondAttribute="leadingMargin" constant="40" id="EQ8-Dr-FBK"/>
+                            <constraint firstItem="Qb7-Dc-oPq" firstAttribute="centerY" secondItem="cJ8-y5-bdY" secondAttribute="centerY" id="NBw-pn-juz"/>
+                            <constraint firstItem="Qb7-Dc-oPq" firstAttribute="centerX" secondItem="cJ8-y5-bdY" secondAttribute="centerX" id="ptf-Y4-og4"/>
+                            <constraint firstItem="Coa-cU-N9Q" firstAttribute="top" secondItem="Qb7-Dc-oPq" secondAttribute="bottom" constant="20" id="xg0-Gp-PAq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Coa-cU-N9Q" secondAttribute="trailing" constant="40" id="yy9-ph-8zp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Dynamic Colors" id="Su3-P1-1nm"/>
+                    <connections>
+                        <outlet property="treeView" destination="Qb7-Dc-oPq" id="sIA-FW-2PH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARH-gJ-CZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="752"/>
         </scene>
     </scenes>
 </document>
