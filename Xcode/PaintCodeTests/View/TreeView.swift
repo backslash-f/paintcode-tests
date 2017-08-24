@@ -14,6 +14,7 @@ import UIKit
     /*
      *
      * Notice - supported range for colors and alpha: 0 to 1.
+     * Color 0.808, 0.808, 0.808 = gray (starting color in this example).
      *
     */
     

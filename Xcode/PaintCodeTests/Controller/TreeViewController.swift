@@ -18,7 +18,6 @@ class TreeViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func colorButtonPressed(_ sender: UIButton) {
-        
         // Get color references.
         let red = CIColor(color: sender.backgroundColor!).red
         let green = CIColor(color: sender.backgroundColor!).green
