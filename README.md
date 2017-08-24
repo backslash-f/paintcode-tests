@@ -7,3 +7,9 @@ Provides a workaround for the following SO question:
 
 ![PaintCode](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/paintCode.gif). 
 ![iOS](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/simulator.gif)
+
+### Second test
+Provides an answer for the following SO question:
+[How to use color variable with PaintCode & Xcode?](https://stackoverflow.com/questions/45859996/how-to-use-color-variable-with-paintcode-xcode)
+
+![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/dynamicColorsExample.gif). 
