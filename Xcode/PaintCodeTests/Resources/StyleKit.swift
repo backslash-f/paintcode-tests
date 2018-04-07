@@ -180,7 +180,7 @@ public class StyleKit : NSObject {
 
     }
 
-    @objc dynamic public class func drawButtonCanvas(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 301, height: 120), resizing: ResizingBehavior = .aspectFit, buttonLabel: String = "Hello, World!") {
+    @objc dynamic public class func drawTextButton(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 301, height: 120), resizing: ResizingBehavior = .aspectFit, buttonLabelText: String = "Hello, World!") {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
@@ -240,10 +240,10 @@ public class StyleKit : NSObject {
             .paragraphStyle: buttonTextStyle,
         ] as [NSAttributedStringKey: Any]
 
-        let buttonTextTextHeight: CGFloat = buttonLabel.boundingRect(with: CGSize(width: buttonTextRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: buttonTextFontAttributes, context: nil).height
+        let buttonTextTextHeight: CGFloat = buttonLabelText.boundingRect(with: CGSize(width: buttonTextRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: buttonTextFontAttributes, context: nil).height
         context.saveGState()
         context.clip(to: buttonTextRect)
-        buttonLabel.draw(in: CGRect(x: buttonTextRect.minX, y: buttonTextRect.minY + (buttonTextRect.height - buttonTextTextHeight) / 2, width: buttonTextRect.width, height: buttonTextTextHeight), withAttributes: buttonTextFontAttributes)
+        buttonLabelText.draw(in: CGRect(x: buttonTextRect.minX, y: buttonTextRect.minY + (buttonTextRect.height - buttonTextTextHeight) / 2, width: buttonTextRect.width, height: buttonTextTextHeight), withAttributes: buttonTextFontAttributes)
         context.restoreGState()
         
         context.restoreGState()
