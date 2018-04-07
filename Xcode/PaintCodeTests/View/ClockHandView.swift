@@ -55,7 +55,7 @@ extension ClockHandView {
         animationTimer.invalidate()
     }
     
-    func updateRedPathRotation() {
+    @objc func updateRedPathRotation() {
         rotation += 1
         
         // FIXME:
