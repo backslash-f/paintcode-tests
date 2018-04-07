@@ -14,3 +14,9 @@ Provides an answer for the following SO question:
 [How to use color variable with PaintCode & Xcode?](https://stackoverflow.com/questions/45859996/how-to-use-color-variable-with-paintcode-xcode)
 
 ![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/dynamicColorsExample.gif). 
+
+### Third test
+Provides an answer for the following SO question:  
+[UIButton title + image using Paintcode app](https://stackoverflow.com/questions/49654237/uibutton-title-image-using-paintcode-app)
+
+![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/textButtonExample.png).
