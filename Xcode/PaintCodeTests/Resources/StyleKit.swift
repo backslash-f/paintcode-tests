@@ -42,11 +42,12 @@ public class StyleKit : NSObject {
         context.saveGState()
         context.setAlpha(touchedElementID)
 
+
+        context.restoreGState()
+
+        context.restoreGState()
+
         StyleKit.touchedElementID = touchedElementID
-
-        context.restoreGState()
-
-        context.restoreGState()
 
 
         //// Rectangle4 Drawing
@@ -174,6 +175,76 @@ public class StyleKit : NSObject {
         treeIconBezierPath.close()
         colorExpression.setFill()
         treeIconBezierPath.fill()
+        
+        context.restoreGState()
+
+    }
+
+    @objc dynamic public class func drawButtonCanvas(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 301, height: 120), resizing: ResizingBehavior = .aspectFit, buttonLabel: String = "Hello, World!") {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 301, height: 120), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 301, y: resizedFrame.height / 120)
+
+
+        //// Color Declarations
+        let strokeColor = UIColor(red: 0.137, green: 0.122, blue: 0.125, alpha: 1.000)
+
+        //// ButtonGroup
+        //// IconFaceGroup
+        //// IconHeadBezier Drawing
+        let iconHeadBezierPath = UIBezierPath(ovalIn: CGRect(x: 22, y: 18, width: 84, height: 84))
+        strokeColor.setStroke()
+        iconHeadBezierPath.lineWidth = 2
+        iconHeadBezierPath.stroke()
+
+
+        //// IconFaceBezier Drawing
+        let iconFaceBezierPath = UIBezierPath()
+        iconFaceBezierPath.move(to: CGPoint(x: 78, y: 72.44))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 64, y: 89.56), controlPoint1: CGPoint(x: 78, y: 81.89), controlPoint2: CGPoint(x: 71.73, y: 89.56))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 50, y: 72.44), controlPoint1: CGPoint(x: 56.27, y: 89.56), controlPoint2: CGPoint(x: 50, y: 81.89))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 64, y: 55.33), controlPoint1: CGPoint(x: 50, y: 62.99), controlPoint2: CGPoint(x: 56.27, y: 55.33))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 78, y: 72.44), controlPoint1: CGPoint(x: 71.73, y: 55.33), controlPoint2: CGPoint(x: 78, y: 62.99))
+        iconFaceBezierPath.close()
+        iconFaceBezierPath.move(to: CGPoint(x: 39.11, y: 42.89))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 45.33, y: 49.11), controlPoint1: CGPoint(x: 39.11, y: 46.33), controlPoint2: CGPoint(x: 41.9, y: 49.11))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 51.56, y: 42.89), controlPoint1: CGPoint(x: 48.77, y: 49.11), controlPoint2: CGPoint(x: 51.56, y: 46.33))
+        iconFaceBezierPath.move(to: CGPoint(x: 76.44, y: 42.89))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 82.67, y: 49.11), controlPoint1: CGPoint(x: 76.44, y: 46.33), controlPoint2: CGPoint(x: 79.23, y: 49.11))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 88.89, y: 42.89), controlPoint1: CGPoint(x: 86.1, y: 49.11), controlPoint2: CGPoint(x: 88.89, y: 46.33))
+        iconFaceBezierPath.move(to: CGPoint(x: 76.46, y: 80.24))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 70.22, y: 77.11), controlPoint1: CGPoint(x: 75.04, y: 78.34), controlPoint2: CGPoint(x: 72.77, y: 77.11))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 63.99, y: 80.23), controlPoint1: CGPoint(x: 67.67, y: 77.11), controlPoint2: CGPoint(x: 65.41, y: 78.34))
+        iconFaceBezierPath.addLine(to: CGPoint(x: 64, y: 80.23))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 57.78, y: 77.11), controlPoint1: CGPoint(x: 62.58, y: 78.33), controlPoint2: CGPoint(x: 60.32, y: 77.11))
+        iconFaceBezierPath.addCurve(to: CGPoint(x: 51.54, y: 80.25), controlPoint1: CGPoint(x: 55.22, y: 77.11), controlPoint2: CGPoint(x: 52.95, y: 78.34))
+        strokeColor.setStroke()
+        iconFaceBezierPath.lineWidth = 2
+        iconFaceBezierPath.stroke()
+
+
+
+
+        //// ButtonText Drawing
+        let buttonTextRect = CGRect(x: 127, y: 21, width: 151, height: 78)
+        let buttonTextStyle = NSMutableParagraphStyle()
+        buttonTextStyle.alignment = .center
+        let buttonTextFontAttributes = [
+            .font: UIFont.systemFont(ofSize: 24),
+            .foregroundColor: UIColor.black,
+            .paragraphStyle: buttonTextStyle,
+        ] as [NSAttributedStringKey: Any]
+
+        let buttonTextTextHeight: CGFloat = buttonLabel.boundingRect(with: CGSize(width: buttonTextRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: buttonTextFontAttributes, context: nil).height
+        context.saveGState()
+        context.clip(to: buttonTextRect)
+        buttonLabel.draw(in: CGRect(x: buttonTextRect.minX, y: buttonTextRect.minY + (buttonTextRect.height - buttonTextTextHeight) / 2, width: buttonTextRect.width, height: buttonTextTextHeight), withAttributes: buttonTextFontAttributes)
+        context.restoreGState()
         
         context.restoreGState()
 
