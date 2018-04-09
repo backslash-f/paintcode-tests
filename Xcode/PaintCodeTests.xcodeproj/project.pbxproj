@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4282B0AF1F4F08AB00901559 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B0AE1F4F08AB00901559 /* TreeView.swift */; };
-		4282B0B11F4F09C900901559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4282B0B01F4F09C900901559 /* Main.storyboard */; };
-		4282B0B51F4F0BE200901559 /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B0B41F4F0BE200901559 /* TreeViewController.swift */; };
-		4282B0B71F4F174C00901559 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B0B61F4F174C00901559 /* MainViewController.swift */; };
-		4282B0BA1F4F18D100901559 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282B0B91F4F18D100901559 /* UIViewControllerExtension.swift */; };
-		ED15D6F91F36A41D0031E0BC /* ClockHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D6F81F36A41D0031E0BC /* ClockHandView.swift */; };
-		ED15D6FE1F36A4540031E0BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D6FA1F36A4540031E0BC /* AppDelegate.swift */; };
-		ED15D6FF1F36A4540031E0BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED15D6FB1F36A4540031E0BC /* Assets.xcassets */; };
-		ED15D7011F36A4540031E0BC /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D6FD1F36A4540031E0BC /* StyleKit.swift */; };
-		ED15D7041F36A4600031E0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED15D7021F36A4600031E0BC /* LaunchScreen.storyboard */; };
-		ED15D7071F36A46F0031E0BC /* ClockHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED15D7061F36A46F0031E0BC /* ClockHandViewController.swift */; };
-		ED6A7C092078EF5600A8F698 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C082078EF5600A8F698 /* TextButton.swift */; };
+		ED6A7C37207C009600A8F698 /* TreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C34207C009600A8F698 /* TreeViewController.swift */; };
+		ED6A7C38207C009600A8F698 /* ClockHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C35207C009600A8F698 /* ClockHandViewController.swift */; };
+		ED6A7C39207C009600A8F698 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C36207C009600A8F698 /* MainViewController.swift */; };
+		ED6A7C42207C00EA00A8F698 /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C3F207C00EA00A8F698 /* TextButton.swift */; };
+		ED6A7C43207C00EA00A8F698 /* ClockHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C40207C00EA00A8F698 /* ClockHandView.swift */; };
+		ED6A7C44207C00EA00A8F698 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C41207C00EA00A8F698 /* TreeView.swift */; };
+		ED6A7C46207C00F700A8F698 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C45207C00F700A8F698 /* UIViewControllerExtension.swift */; };
+		ED6A7C49207C010200A8F698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A7C47207C010200A8F698 /* Main.storyboard */; };
+		ED6A7C4A207C010200A8F698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED6A7C48207C010200A8F698 /* LaunchScreen.storyboard */; };
+		ED6A7C4F207C010E00A8F698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED6A7C4B207C010D00A8F698 /* Assets.xcassets */; };
+		ED6A7C50207C010E00A8F698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C4C207C010E00A8F698 /* AppDelegate.swift */; };
+		ED6A7C52207C010E00A8F698 /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6A7C4E207C010E00A8F698 /* StyleKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4282B0AE1F4F08AB00901559 /* TreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeView.swift; path = PaintCodeTests/View/TreeView.swift; sourceTree = SOURCE_ROOT; };
-		4282B0B01F4F09C900901559 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = PaintCodeTests/Storyboard/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		4282B0B41F4F0BE200901559 /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeViewController.swift; path = PaintCodeTests/Controller/TreeViewController.swift; sourceTree = SOURCE_ROOT; };
-		4282B0B61F4F174C00901559 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = PaintCodeTests/Controller/MainViewController.swift; sourceTree = SOURCE_ROOT; };
-		4282B0B91F4F18D100901559 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = PaintCodeTests/Extensions/UIViewControllerExtension.swift; sourceTree = SOURCE_ROOT; };
-		ED15D6DD1F3690AC0031E0BC /* PaintCodeTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintCodeTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED15D6F81F36A41D0031E0BC /* ClockHandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockHandView.swift; path = PaintCodeTests/View/ClockHandView.swift; sourceTree = SOURCE_ROOT; };
-		ED15D6FA1F36A4540031E0BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PaintCodeTests/Resources/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		ED15D6FB1F36A4540031E0BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PaintCodeTests/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		ED15D6FC1F36A4540031E0BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PaintCodeTests/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
-		ED15D6FD1F36A4540031E0BC /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleKit.swift; path = PaintCodeTests/Resources/StyleKit.swift; sourceTree = SOURCE_ROOT; };
-		ED15D7021F36A4600031E0BC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PaintCodeTests/Storyboard/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		ED15D7061F36A46F0031E0BC /* ClockHandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockHandViewController.swift; path = PaintCodeTests/Controller/ClockHandViewController.swift; sourceTree = SOURCE_ROOT; };
-		ED6A7C082078EF5600A8F698 /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextButton.swift; path = PaintCodeTests/View/TextButton.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C33207C009500A8F698 /* PaintCodeTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PaintCodeTests.app; path = "/Users/fernando/Documents/Projects/Software/reference/paintcode-tests/Xcode/build/Debug-iphoneos/PaintCodeTests.app"; sourceTree = "<absolute>"; };
+		ED6A7C34207C009600A8F698 /* TreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeViewController.swift; path = PaintCodeTests/Controller/TreeViewController.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C35207C009600A8F698 /* ClockHandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockHandViewController.swift; path = PaintCodeTests/Controller/ClockHandViewController.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C36207C009600A8F698 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = PaintCodeTests/Controller/MainViewController.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C3F207C00EA00A8F698 /* TextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextButton.swift; path = PaintCodeTests/View/TextButton.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C40207C00EA00A8F698 /* ClockHandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClockHandView.swift; path = PaintCodeTests/View/ClockHandView.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C41207C00EA00A8F698 /* TreeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TreeView.swift; path = PaintCodeTests/View/TreeView.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C45207C00F700A8F698 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = PaintCodeTests/Extensions/UIViewControllerExtension.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C47207C010200A8F698 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = PaintCodeTests/Storyboard/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		ED6A7C48207C010200A8F698 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PaintCodeTests/Storyboard/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		ED6A7C4B207C010D00A8F698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PaintCodeTests/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		ED6A7C4C207C010E00A8F698 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PaintCodeTests/Resources/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		ED6A7C4D207C010E00A8F698 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PaintCodeTests/Resources/Info.plist; sourceTree = SOURCE_ROOT; };
+		ED6A7C4E207C010E00A8F698 /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StyleKit.swift; path = PaintCodeTests/Resources/StyleKit.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,81 +49,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4282B0B81F4F18B200901559 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4282B0B91F4F18D100901559 /* UIViewControllerExtension.swift */,
-			);
-			name = Extensions;
-			path = Model;
-			sourceTree = "<group>";
-		};
 		ED15D6D41F3690AC0031E0BC = {
 			isa = PBXGroup;
 			children = (
-				ED15D6F21F3693AE0031E0BC /* Model */,
-				ED15D6F31F3693B70031E0BC /* View */,
-				ED15D6DF1F3690AC0031E0BC /* Controller */,
-				4282B0B81F4F18B200901559 /* Extensions */,
-				ED15D6F41F3693C70031E0BC /* Storyboard */,
-				ED15D6F51F3693E10031E0BC /* Resources */,
-				ED15D6DE1F3690AC0031E0BC /* Products */,
+				ED6A7C30207C003F00A8F698 /* PaintCodeTests */,
 			);
 			sourceTree = "<group>";
 		};
-		ED15D6DE1F3690AC0031E0BC /* Products */ = {
+		ED6A7C30207C003F00A8F698 /* PaintCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				ED15D6DD1F3690AC0031E0BC /* PaintCodeTests.app */,
+				ED6A7C3E207C00B900A8F698 /* Model */,
+				ED6A7C3D207C00B600A8F698 /* View */,
+				ED6A7C32207C008300A8F698 /* Controller */,
+				ED6A7C3A207C00A600A8F698 /* Extensions */,
+				ED6A7C3C207C00B100A8F698 /* Storyboard */,
+				ED6A7C3B207C00AC00A8F698 /* Resources */,
+				ED6A7C53207C011600A8F698 /* Products */,
 			);
-			name = Products;
+			name = PaintCodeTests;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
-		ED15D6DF1F3690AC0031E0BC /* Controller */ = {
+		ED6A7C32207C008300A8F698 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ED15D7061F36A46F0031E0BC /* ClockHandViewController.swift */,
-				4282B0B41F4F0BE200901559 /* TreeViewController.swift */,
+				ED6A7C35207C009600A8F698 /* ClockHandViewController.swift */,
+				ED6A7C36207C009600A8F698 /* MainViewController.swift */,
+				ED6A7C34207C009600A8F698 /* TreeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		ED15D6F21F3693AE0031E0BC /* Model */ = {
+		ED6A7C3A207C00A600A8F698 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A7C45207C00F700A8F698 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ED6A7C3B207C00AC00A8F698 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A7C4C207C010E00A8F698 /* AppDelegate.swift */,
+				ED6A7C4B207C010D00A8F698 /* Assets.xcassets */,
+				ED6A7C4D207C010E00A8F698 /* Info.plist */,
+				ED6A7C4E207C010E00A8F698 /* StyleKit.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ED6A7C3C207C00B100A8F698 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A7C48207C010200A8F698 /* LaunchScreen.storyboard */,
+				ED6A7C47207C010200A8F698 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		ED6A7C3D207C00B600A8F698 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ED6A7C40207C00EA00A8F698 /* ClockHandView.swift */,
+				ED6A7C3F207C00EA00A8F698 /* TextButton.swift */,
+				ED6A7C41207C00EA00A8F698 /* TreeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ED6A7C3E207C00B900A8F698 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ED15D6F31F3693B70031E0BC /* View */ = {
+		ED6A7C53207C011600A8F698 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4282B0B61F4F174C00901559 /* MainViewController.swift */,
-				ED15D6F81F36A41D0031E0BC /* ClockHandView.swift */,
-				4282B0AE1F4F08AB00901559 /* TreeView.swift */,
-				ED6A7C082078EF5600A8F698 /* TextButton.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		ED15D6F41F3693C70031E0BC /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				4282B0B01F4F09C900901559 /* Main.storyboard */,
-				ED15D7021F36A4600031E0BC /* LaunchScreen.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		ED15D6F51F3693E10031E0BC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				ED15D6FA1F36A4540031E0BC /* AppDelegate.swift */,
-				ED15D6FB1F36A4540031E0BC /* Assets.xcassets */,
-				ED15D6FC1F36A4540031E0BC /* Info.plist */,
-				ED15D6FD1F36A4540031E0BC /* StyleKit.swift */,
-			);
-			path = Resources;
+			path = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +150,7 @@
 			);
 			name = PaintCodeTests;
 			productName = PaintCodeTests;
-			productReference = ED15D6DD1F3690AC0031E0BC /* PaintCodeTests.app */;
+			productReference = ED6A7C33207C009500A8F698 /* PaintCodeTests.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -173,7 +180,7 @@
 				Base,
 			);
 			mainGroup = ED15D6D41F3690AC0031E0BC;
-			productRefGroup = ED15D6DE1F3690AC0031E0BC /* Products */;
+			productRefGroup = ED15D6D41F3690AC0031E0BC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -187,9 +194,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED15D7041F36A4600031E0BC /* LaunchScreen.storyboard in Resources */,
-				ED15D6FF1F36A4540031E0BC /* Assets.xcassets in Resources */,
-				4282B0B11F4F09C900901559 /* Main.storyboard in Resources */,
+				ED6A7C49207C010200A8F698 /* Main.storyboard in Resources */,
+				ED6A7C4F207C010E00A8F698 /* Assets.xcassets in Resources */,
+				ED6A7C4A207C010200A8F698 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,15 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4282B0B71F4F174C00901559 /* MainViewController.swift in Sources */,
-				4282B0AF1F4F08AB00901559 /* TreeView.swift in Sources */,
-				ED15D6FE1F36A4540031E0BC /* AppDelegate.swift in Sources */,
-				ED15D6F91F36A41D0031E0BC /* ClockHandView.swift in Sources */,
-				4282B0BA1F4F18D100901559 /* UIViewControllerExtension.swift in Sources */,
-				ED15D7071F36A46F0031E0BC /* ClockHandViewController.swift in Sources */,
-				ED6A7C092078EF5600A8F698 /* TextButton.swift in Sources */,
-				4282B0B51F4F0BE200901559 /* TreeViewController.swift in Sources */,
-				ED15D7011F36A4540031E0BC /* StyleKit.swift in Sources */,
+				ED6A7C52207C010E00A8F698 /* StyleKit.swift in Sources */,
+				ED6A7C50207C010E00A8F698 /* AppDelegate.swift in Sources */,
+				ED6A7C44207C00EA00A8F698 /* TreeView.swift in Sources */,
+				ED6A7C42207C00EA00A8F698 /* TextButton.swift in Sources */,
+				ED6A7C39207C009600A8F698 /* MainViewController.swift in Sources */,
+				ED6A7C38207C009600A8F698 /* ClockHandViewController.swift in Sources */,
+				ED6A7C37207C009600A8F698 /* TreeViewController.swift in Sources */,
+				ED6A7C46207C00F700A8F698 /* UIViewControllerExtension.swift in Sources */,
+				ED6A7C43207C00EA00A8F698 /* ClockHandView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,11 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "$(SRCROOT)/PaintCodeTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.backslash-f.PaintCodeTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -346,6 +355,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = UKS358BH88;
 				INFOPLIST_FILE = "$(SRCROOT)/PaintCodeTests/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
