@@ -11,6 +11,8 @@ import UIKit
 
 @IBDesignable class StarView: UIView {
 
+    // MARK: - Lifecycle
+
     override func draw(_ rect: CGRect) {
         StyleKit.drawStarIcon(frame: rect)
     }

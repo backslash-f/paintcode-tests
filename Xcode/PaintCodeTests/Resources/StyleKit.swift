@@ -49,6 +49,7 @@ public class StyleKit : NSObject {
 
         StyleKit.touchedElementID = touchedElementID
 
+
         //// Rectangle4 Drawing
         let rectangle4Path = UIBezierPath(rect: CGRect(x: 0, y: 92, width: 16, height: 16))
         UIColor.blue.setFill()
@@ -193,25 +194,25 @@ public class StyleKit : NSObject {
         //// Color Declarations
         let color = UIColor(red: 1.000, green: 0.523, blue: 0.000, alpha: 1.000)
 
-        //// StarBezier Drawing
-        let starBezierPath = UIBezierPath()
-        starBezierPath.move(to: CGPoint(x: 25, y: 4))
-        starBezierPath.addLine(to: CGPoint(x: 31.76, y: 17.7))
-        starBezierPath.addLine(to: CGPoint(x: 46.87, y: 19.89))
-        starBezierPath.addLine(to: CGPoint(x: 35.94, y: 30.55))
-        starBezierPath.addLine(to: CGPoint(x: 38.52, y: 45.61))
-        starBezierPath.addLine(to: CGPoint(x: 25, y: 38.5))
-        starBezierPath.addLine(to: CGPoint(x: 11.48, y: 45.61))
-        starBezierPath.addLine(to: CGPoint(x: 14.06, y: 30.55))
-        starBezierPath.addLine(to: CGPoint(x: 3.13, y: 19.89))
-        starBezierPath.addLine(to: CGPoint(x: 18.24, y: 17.7))
-        starBezierPath.addLine(to: CGPoint(x: 25, y: 4))
-        starBezierPath.close()
+        //// StarIconBezier Drawing
+        let starIconBezierPath = UIBezierPath()
+        starIconBezierPath.move(to: CGPoint(x: 25, y: 4))
+        starIconBezierPath.addLine(to: CGPoint(x: 31.76, y: 17.7))
+        starIconBezierPath.addLine(to: CGPoint(x: 46.87, y: 19.89))
+        starIconBezierPath.addLine(to: CGPoint(x: 35.94, y: 30.55))
+        starIconBezierPath.addLine(to: CGPoint(x: 38.52, y: 45.61))
+        starIconBezierPath.addLine(to: CGPoint(x: 25, y: 38.5))
+        starIconBezierPath.addLine(to: CGPoint(x: 11.48, y: 45.61))
+        starIconBezierPath.addLine(to: CGPoint(x: 14.06, y: 30.55))
+        starIconBezierPath.addLine(to: CGPoint(x: 3.13, y: 19.89))
+        starIconBezierPath.addLine(to: CGPoint(x: 18.24, y: 17.7))
+        starIconBezierPath.addLine(to: CGPoint(x: 25, y: 4))
+        starIconBezierPath.close()
         color.setFill()
-        starBezierPath.fill()
+        starIconBezierPath.fill()
         UIColor.darkGray.setStroke()
-        starBezierPath.lineWidth = 1
-        starBezierPath.stroke()
+        starIconBezierPath.lineWidth = 1
+        starIconBezierPath.stroke()
         
         context.restoreGState()
 
