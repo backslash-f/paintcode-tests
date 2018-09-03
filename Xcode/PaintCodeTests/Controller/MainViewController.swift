@@ -9,17 +9,4 @@
 import Foundation
 import UIKit
 
-class MainViewController: UIViewController {
-    
-    // MARK: - Lifecycle
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        hideNavigationBar()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        showNavigationBar()
-    }
-}
+class MainViewController: UIViewController {}

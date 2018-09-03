@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--PaintCode Tests-->
         <scene sceneID="BcO-z2-GSD">
             <objects>
                 <viewController id="FsF-s1-pyG" customClass="MainViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +55,7 @@
                             <constraint firstItem="u7B-jc-ZcQ" firstAttribute="centerY" secondItem="FJX-Zi-Jaj" secondAttribute="centerY" id="PQa-XW-E2B"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7fU-uV-Uv3"/>
+                    <navigationItem key="navigationItem" title="PaintCode Tests" id="7fU-uV-Uv3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2K-Ed-yGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb7-Dc-oPq" customClass="TreeView" customModule="PaintCodeTests" customModuleProvider="target">
-                                <rect key="frame" x="37" y="162" width="300" height="342"/>
+                                <rect key="frame" x="37" y="162.5" width="300" height="342"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="l0w-ij-EK2"/>
@@ -189,7 +190,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-cU-N9Q" userLabel="Buttons Stack View">
-                                <rect key="frame" x="56" y="524" width="263" height="44"/>
+                                <rect key="frame" x="56" y="524.5" width="263" height="44"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-91-xjO" userLabel="Color01">
                                         <rect key="frame" x="0.0" y="0.0" width="74.5" height="44"/>
