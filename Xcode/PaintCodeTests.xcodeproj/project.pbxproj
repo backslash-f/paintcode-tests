@@ -17,6 +17,8 @@
 		ED2E0C61213DD8F70029BC7D /* ClockHandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E0C5E213DD8F60029BC7D /* ClockHandView.swift */; };
 		ED2E0C65213DD9080029BC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2E0C64213DD9080029BC7D /* Main.storyboard */; };
 		ED2E0C67213DD9100029BC7D /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E0C66213DD9100029BC7D /* StyleKit.swift */; };
+		ED2E0C69213DDC480029BC7D /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E0C68213DDC480029BC7D /* StarView.swift */; };
+		ED2E0C6B213DDD380029BC7D /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E0C6A213DDD380029BC7D /* StarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		ED2E0C5E213DD8F60029BC7D /* ClockHandView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockHandView.swift; sourceTree = "<group>"; };
 		ED2E0C64213DD9080029BC7D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		ED2E0C66213DD9100029BC7D /* StyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKit.swift; sourceTree = "<group>"; };
+		ED2E0C68213DDC480029BC7D /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StarView.swift; path = "../../../../../../source/backslash-f/paintcode-tests/Xcode/PaintCodeTests/View/StarView.swift"; sourceTree = "<group>"; };
+		ED2E0C6A213DDD380029BC7D /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StarViewController.swift; path = "../../../../../../source/backslash-f/paintcode-tests/Xcode/PaintCodeTests/Controller/StarViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 				ED2E0C5E213DD8F60029BC7D /* ClockHandView.swift */,
 				ED2E0C5D213DD8F60029BC7D /* TextButton.swift */,
 				ED2E0C5C213DD8F60029BC7D /* TreeView.swift */,
+				ED2E0C68213DDC480029BC7D /* StarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				ED2E0C56213DD8E20029BC7D /* ClockHandViewController.swift */,
 				ED2E0C58213DD8E20029BC7D /* MainViewController.swift */,
 				ED2E0C57213DD8E20029BC7D /* TreeViewController.swift */,
+				ED2E0C6A213DDD380029BC7D /* StarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -111,10 +117,10 @@
 		ED2E0C55213DD8580029BC7D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				ED2E0C66213DD9100029BC7D /* StyleKit.swift */,
 				ED2E0C45213DD8140029BC7D /* Assets.xcassets */,
 				ED2E0C3E213DD8110029BC7D /* AppDelegate.swift */,
 				ED2E0C4A213DD8140029BC7D /* Info.plist */,
+				ED2E0C66213DD9100029BC7D /* StyleKit.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2E0C69213DDC480029BC7D /* StarView.swift in Sources */,
 				ED2E0C67213DD9100029BC7D /* StyleKit.swift in Sources */,
 				ED2E0C60213DD8F70029BC7D /* TextButton.swift in Sources */,
 				ED2E0C5F213DD8F70029BC7D /* TreeView.swift in Sources */,
+				ED2E0C6B213DDD380029BC7D /* StarViewController.swift in Sources */,
 				ED2E0C59213DD8E20029BC7D /* ClockHandViewController.swift in Sources */,
 				ED2E0C61213DD8F70029BC7D /* ClockHandView.swift in Sources */,
 				ED2E0C5A213DD8E20029BC7D /* TreeViewController.swift in Sources */,

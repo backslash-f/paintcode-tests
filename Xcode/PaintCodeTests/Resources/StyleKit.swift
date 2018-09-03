@@ -179,6 +179,44 @@ public class StyleKit : NSObject {
 
     }
 
+    @objc dynamic public class func drawStarIcon(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 50, height: 50), resizing: ResizingBehavior = .aspectFit) {
+        //// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        //// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame: CGRect = resizing.apply(rect: CGRect(x: 0, y: 0, width: 50, height: 50), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 50, y: resizedFrame.height / 50)
+
+
+        //// Color Declarations
+        let color = UIColor(red: 1.000, green: 0.523, blue: 0.000, alpha: 1.000)
+
+        //// StarBezier Drawing
+        let starBezierPath = UIBezierPath()
+        starBezierPath.move(to: CGPoint(x: 25, y: 4))
+        starBezierPath.addLine(to: CGPoint(x: 31.76, y: 17.7))
+        starBezierPath.addLine(to: CGPoint(x: 46.87, y: 19.89))
+        starBezierPath.addLine(to: CGPoint(x: 35.94, y: 30.55))
+        starBezierPath.addLine(to: CGPoint(x: 38.52, y: 45.61))
+        starBezierPath.addLine(to: CGPoint(x: 25, y: 38.5))
+        starBezierPath.addLine(to: CGPoint(x: 11.48, y: 45.61))
+        starBezierPath.addLine(to: CGPoint(x: 14.06, y: 30.55))
+        starBezierPath.addLine(to: CGPoint(x: 3.13, y: 19.89))
+        starBezierPath.addLine(to: CGPoint(x: 18.24, y: 17.7))
+        starBezierPath.addLine(to: CGPoint(x: 25, y: 4))
+        starBezierPath.close()
+        color.setFill()
+        starBezierPath.fill()
+        UIColor.darkGray.setStroke()
+        starBezierPath.lineWidth = 1
+        starBezierPath.stroke()
+        
+        context.restoreGState()
+
+    }
+
     @objc dynamic public class func drawTextButton(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 301, height: 120), resizing: ResizingBehavior = .aspectFit, buttonLabelText: String = "Hello, World!") {
         //// General Declarations
         let context = UIGraphicsGetCurrentContext()!
