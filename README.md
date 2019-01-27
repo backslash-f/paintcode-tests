@@ -26,3 +26,9 @@ Provides an answer for the following SO question:
 [Dynamic stroke](https://stackoverflow.com/questions/52154526/paintcode-expression-for-dynamic-stroke-width-based-on-frame)
 
 ![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/starViewStroke.png)
+
+### Fifth test
+Provides an answer for the following SO question:  
+[Clockwise disappearing logo](https://stackoverflow.com/questions/54389273/make-clockwise-disappearing-circle-with-paintcode)
+
+![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/clockwiseAnimationExample.gif)
