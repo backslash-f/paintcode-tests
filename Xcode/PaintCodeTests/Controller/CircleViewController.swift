@@ -18,4 +18,10 @@ class CircleViewController: UIViewController {
             circleView.startAnimating()
         }
     }
+
+    // MARK: - Lifecycle
+
+    override func viewDidDisappear(_ animated: Bool) {
+        circleView.stopAnimating() // To avoid unnecessary CPU usage.
+    }
 }

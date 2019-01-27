@@ -50,6 +50,7 @@ extension CircleView {
     }
     
     @objc func updateAngle() {
+        if angle == 360 { angle = 0 } // To avoid a huge number.
         angle += 1
     }
 }
