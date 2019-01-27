@@ -276,7 +276,7 @@ public class StyleKit : NSObject {
             .font: UIFont.systemFont(ofSize: 24),
             .foregroundColor: UIColor.black,
             .paragraphStyle: buttonTextStyle,
-        ] as [NSAttributedStringKey: Any]
+        ] as [NSAttributedString.Key: Any]
 
         let buttonTextTextHeight: CGFloat = buttonLabelText.boundingRect(with: CGSize(width: buttonTextRect.width, height: CGFloat.infinity), options: .usesLineFragmentOrigin, attributes: buttonTextFontAttributes, context: nil).height
         context.saveGState()
