@@ -7,3 +7,15 @@
 //
 
 import Foundation
+import UIKit
+
+class CircleViewController: UIViewController {
+
+    // MARK: - Private Properties
+
+    @IBOutlet private weak var circleView: CircleView! {
+        didSet {
+            circleView.startAnimating()
+        }
+    }
+}

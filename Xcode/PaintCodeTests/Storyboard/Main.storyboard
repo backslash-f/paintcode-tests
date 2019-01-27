@@ -311,10 +311,10 @@
             </objects>
             <point key="canvasLocation" x="2665" y="-199"/>
         </scene>
-        <!--View Controller-->
+        <!--Circle View Controller-->
         <scene sceneID="ihr-GA-l8P">
             <objects>
-                <viewController id="thN-Zr-RuG" sceneMemberID="viewController">
+                <viewController id="thN-Zr-RuG" customClass="CircleViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tBh-v9-7kD"/>
                         <viewControllerLayoutGuide type="bottom" id="BZm-o9-jqM"/>
@@ -338,6 +338,9 @@
                             <constraint firstItem="mBS-l2-u3Z" firstAttribute="centerX" secondItem="j4d-3i-Rc4" secondAttribute="centerX" id="uYj-tV-hIc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="circleView" destination="mBS-l2-u3Z" id="33Z-Fv-1YY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Txl-lK-c50" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
