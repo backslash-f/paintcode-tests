@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		071D1DBC21FE1C4400A096F0 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D1DBB21FE1C4400A096F0 /* StarView.swift */; };
 		071D1DBE21FE1C5200A096F0 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D1DBD21FE1C5100A096F0 /* StarViewController.swift */; };
+		071D1DC021FE217200A096F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D1DBF21FE217200A096F0 /* CircleView.swift */; };
+		071D1DC221FE218300A096F0 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D1DC121FE218300A096F0 /* CircleViewController.swift */; };
 		ED2E0C3F213DD8110029BC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E0C3E213DD8110029BC7D /* AppDelegate.swift */; };
 		ED2E0C46213DD8140029BC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2E0C45213DD8140029BC7D /* Assets.xcassets */; };
 		ED2E0C59213DD8E20029BC7D /* ClockHandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2E0C56213DD8E20029BC7D /* ClockHandViewController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		071D1DBB21FE1C4400A096F0 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
 		071D1DBD21FE1C5100A096F0 /* StarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
+		071D1DBF21FE217200A096F0 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		071D1DC121FE218300A096F0 /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		ED2E0C3B213DD8110029BC7D /* PaintCodeTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintCodeTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED2E0C3E213DD8110029BC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED2E0C45213DD8140029BC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		ED2E0C51213DD8270029BC7D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				071D1DBF21FE217200A096F0 /* CircleView.swift */,
 				ED2E0C5E213DD8F60029BC7D /* ClockHandView.swift */,
 				071D1DBB21FE1C4400A096F0 /* StarView.swift */,
 				ED2E0C5D213DD8F60029BC7D /* TextButton.swift */,
@@ -98,6 +103,7 @@
 		ED2E0C52213DD82B0029BC7D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				071D1DC121FE218300A096F0 /* CircleViewController.swift */,
 				ED2E0C56213DD8E20029BC7D /* ClockHandViewController.swift */,
 				ED2E0C58213DD8E20029BC7D /* MainViewController.swift */,
 				071D1DBD21FE1C5100A096F0 /* StarViewController.swift */,
@@ -198,10 +204,12 @@
 			files = (
 				ED2E0C67213DD9100029BC7D /* StyleKit.swift in Sources */,
 				ED2E0C60213DD8F70029BC7D /* TextButton.swift in Sources */,
+				071D1DC221FE218300A096F0 /* CircleViewController.swift in Sources */,
 				ED2E0C5F213DD8F70029BC7D /* TreeView.swift in Sources */,
 				ED2E0C59213DD8E20029BC7D /* ClockHandViewController.swift in Sources */,
 				071D1DBE21FE1C5200A096F0 /* StarViewController.swift in Sources */,
 				ED2E0C61213DD8F70029BC7D /* ClockHandView.swift in Sources */,
+				071D1DC021FE217200A096F0 /* CircleView.swift in Sources */,
 				ED2E0C5A213DD8E20029BC7D /* TreeViewController.swift in Sources */,
 				ED2E0C3F213DD8110029BC7D /* AppDelegate.swift in Sources */,
 				071D1DBC21FE1C4400A096F0 /* StarView.swift in Sources */,

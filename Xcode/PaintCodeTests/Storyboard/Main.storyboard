@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,34 +22,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-jc-ZcQ">
-                                <rect key="frame" x="116.5" y="243.5" width="141" height="180"/>
+                                <rect key="frame" x="100" y="218.5" width="175" height="230"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-qr-vyq">
-                                        <rect key="frame" x="25" y="0.0" width="91" height="30"/>
+                                        <rect key="frame" x="42" y="0.0" width="91" height="30"/>
                                         <state key="normal" title="Test Collision"/>
                                         <connections>
                                             <segue destination="3o9-9N-m9o" kind="show" id="IOS-ev-5Bc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-ea-c0S">
-                                        <rect key="frame" x="0.0" y="50" width="141" height="30"/>
+                                        <rect key="frame" x="17" y="50" width="141" height="30"/>
                                         <state key="normal" title="Test Dynamic Colors"/>
                                         <connections>
                                             <segue destination="du8-3p-Jqr" kind="show" id="g8w-IC-W2P"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-IS-yMB" userLabel="Test Button Text">
-                                        <rect key="frame" x="14.5" y="100" width="112" height="30"/>
+                                        <rect key="frame" x="31.5" y="100" width="112" height="30"/>
                                         <state key="normal" title="Test Button Text"/>
                                         <connections>
                                             <segue destination="raa-v1-uIT" kind="show" id="9f3-lb-kYd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-GF-idZ" userLabel="Test Dynamic Stroke">
-                                        <rect key="frame" x="0.0" y="150" width="141" height="30"/>
+                                        <rect key="frame" x="17" y="150" width="141" height="30"/>
                                         <state key="normal" title="Test Dynamic Stroke"/>
                                         <connections>
                                             <segue destination="aVr-dL-ZLL" kind="show" id="a7m-yb-h9X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-Xq-X3N" userLabel="Test Clockwise Animation">
+                                        <rect key="frame" x="0.0" y="200" width="175" height="30"/>
+                                        <state key="normal" title="Test Clockwise Animation"/>
+                                        <connections>
+                                            <segue destination="thN-Zr-RuG" kind="show" id="n0q-TJ-gBF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-us-mKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="911"/>
+            <point key="canvasLocation" x="3598" y="334"/>
         </scene>
         <!--Star View Controller-->
         <scene sceneID="MVv-sm-We0">
@@ -154,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSY-7g-Ou7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="1188"/>
+            <point key="canvasLocation" x="2665" y="922"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xlj-i8-25u">
@@ -187,7 +193,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N3b-ie-kLc" customClass="ClockHandView" customModule="PaintCodeTests" customModuleProvider="target">
-                                <rect key="frame" x="87" y="233.5" width="200" height="200"/>
+                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="asd-YB-IDp"/>
@@ -221,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AkW-zc-byH" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-229"/>
+            <point key="canvasLocation" x="1713" y="-199"/>
         </scene>
         <!--Dynamic Colors-->
         <scene sceneID="2rQ-3c-6M9">
@@ -236,7 +242,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qb7-Dc-oPq" customClass="TreeView" customModule="PaintCodeTests" customModuleProvider="target">
-                                <rect key="frame" x="37" y="162.5" width="300" height="342"/>
+                                <rect key="frame" x="37.5" y="162.5" width="300" height="342"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="l0w-ij-EK2"/>
@@ -303,7 +309,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARH-gJ-CZr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2497" y="334"/>
+            <point key="canvasLocation" x="2665" y="-199"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ihr-GA-l8P">
+            <objects>
+                <viewController id="thN-Zr-RuG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tBh-v9-7kD"/>
+                        <viewControllerLayoutGuide type="bottom" id="BZm-o9-jqM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j4d-3i-Rc4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBS-l2-u3Z" customClass="CircleView" customModule="PaintCodeTests" customModuleProvider="target">
+                                <rect key="frame" x="47.5" y="193.5" width="280" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="L51-9N-29k"/>
+                                    <constraint firstAttribute="width" constant="280" id="XLB-JJ-Nbj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mBS-l2-u3Z" firstAttribute="centerY" secondItem="j4d-3i-Rc4" secondAttribute="centerY" id="jYP-bq-HGh"/>
+                            <constraint firstItem="mBS-l2-u3Z" firstAttribute="centerX" secondItem="j4d-3i-Rc4" secondAttribute="centerX" id="uYj-tV-hIc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Txl-lK-c50" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="922"/>
         </scene>
     </scenes>
 </document>
