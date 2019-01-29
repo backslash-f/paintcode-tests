@@ -16,12 +16,17 @@ class CircleViewController: UIViewController {
     @IBOutlet private weak var circleView: CircleView! {
         didSet {
             circleView.startAnimating()
+            circleView.delegate = self
         }
     }
+}
 
-    // MARK: - Lifecycle
+// MARK: - CircleViewDelegate
 
-    override func viewDidDisappear(_ animated: Bool) {
-        circleView.stopAnimating() // To avoid unnecessary CPU usage.
+extension CircleViewController: CircleViewDelegate {
+
+    func didCompleteAnimation() {
+        // Do whatever here. In this example, I'm programatically dismissing the screen.
+        navigationController?.popViewController(animated: true)
     }
 }

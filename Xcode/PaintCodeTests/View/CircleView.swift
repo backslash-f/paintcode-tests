@@ -9,9 +9,18 @@
 import Foundation
 import UIKit
 
+/// Conform to this protocol to keep track of CircleView events.
+protocol CircleViewDelegate {
+
+    /// The clockwise animation is completed, that is: the angle changed from 0 to 360 degrees.
+    func didCompleteAnimation()
+}
+
 @IBDesignable class CircleView: UIView {
     
     // MARK: - Properties
+
+    var delegate: CircleViewDelegate?
     
     var angle: CGFloat = 0 {
         didSet {
@@ -50,7 +59,11 @@ extension CircleView {
     }
     
     @objc func updateAngle() {
-        if angle == 360 { angle = 0 } // To avoid a huge number.
+        if angle == 360 {
+            stopAnimating()
+            delegate?.didCompleteAnimation()
+        }
+        
         angle += 1
     }
 }
