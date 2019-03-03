@@ -32,3 +32,9 @@ Provides an answer for the following SO question:
 [Clockwise disappearing logo](https://stackoverflow.com/questions/54389273/make-clockwise-disappearing-circle-with-paintcode)
 
 ![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/clockwiseAnimationExample.gif)
+
+### Sixth test
+Provides an answer for the following SO question:  
+[Custom class to UIView in the UITableView](https://stackoverflow.com/questions/54970666/add-custom-class-to-uiview-in-the-uitableview)
+
+![Example](https://github.com/backslash-f/paintcode-tests/blob/master/Resources/Screenshots/customCellExample.gif)
