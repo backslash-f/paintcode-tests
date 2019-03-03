@@ -22,41 +22,48 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-jc-ZcQ">
-                                <rect key="frame" x="100" y="218.5" width="175" height="230"/>
+                                <rect key="frame" x="82.5" y="193.5" width="210" height="280"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-qr-vyq">
-                                        <rect key="frame" x="42" y="0.0" width="91" height="30"/>
+                                        <rect key="frame" x="59.5" y="0.0" width="91" height="30"/>
                                         <state key="normal" title="Test Collision"/>
                                         <connections>
                                             <segue destination="3o9-9N-m9o" kind="show" id="IOS-ev-5Bc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-ea-c0S">
-                                        <rect key="frame" x="17" y="50" width="141" height="30"/>
+                                        <rect key="frame" x="34.5" y="50" width="141" height="30"/>
                                         <state key="normal" title="Test Dynamic Colors"/>
                                         <connections>
                                             <segue destination="du8-3p-Jqr" kind="show" id="g8w-IC-W2P"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-IS-yMB" userLabel="Test Button Text">
-                                        <rect key="frame" x="31.5" y="100" width="112" height="30"/>
+                                        <rect key="frame" x="49" y="100" width="112" height="30"/>
                                         <state key="normal" title="Test Button Text"/>
                                         <connections>
                                             <segue destination="raa-v1-uIT" kind="show" id="9f3-lb-kYd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-GF-idZ" userLabel="Test Dynamic Stroke">
-                                        <rect key="frame" x="17" y="150" width="141" height="30"/>
+                                        <rect key="frame" x="34.5" y="150" width="141" height="30"/>
                                         <state key="normal" title="Test Dynamic Stroke"/>
                                         <connections>
                                             <segue destination="aVr-dL-ZLL" kind="show" id="a7m-yb-h9X"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-Xq-X3N" userLabel="Test Clockwise Animation">
-                                        <rect key="frame" x="0.0" y="200" width="175" height="30"/>
+                                        <rect key="frame" x="17.5" y="200" width="175" height="30"/>
                                         <state key="normal" title="Test Clockwise Animation"/>
                                         <connections>
                                             <segue destination="thN-Zr-RuG" kind="show" id="n0q-TJ-gBF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-O9-da8">
+                                        <rect key="frame" x="0.0" y="250" width="210" height="30"/>
+                                        <state key="normal" title="Test Custom Cell in Table View"/>
+                                        <connections>
+                                            <segue destination="gkV-ZT-87H" kind="show" id="Jsw-La-eaV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -99,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-us-mKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3598" y="334"/>
+            <point key="canvasLocation" x="3588" y="-199"/>
         </scene>
         <!--Star View Controller-->
         <scene sceneID="MVv-sm-We0">
@@ -161,6 +168,63 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSY-7g-Ou7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2665" y="922"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="bNs-BX-GeT">
+            <objects>
+                <tableViewController id="gkV-ZT-87H" customClass="TableViewController" customModule="PaintCodeTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mtp-vd-3Tj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="3bu-ol-apd" customClass="CustomCell" customModule="PaintCodeTests" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3bu-ol-apd" id="eTE-bj-GCn">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8Z-o1-aJn">
+                                            <rect key="frame" x="10" y="2" width="40" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="2T4-tw-W5R"/>
+                                                <constraint firstAttribute="height" constant="40" id="6P5-57-gJC"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-Km-kja">
+                                            <rect key="frame" x="70" y="13" width="279" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="x8Z-o1-aJn" firstAttribute="leading" secondItem="eTE-bj-GCn" secondAttribute="leading" constant="10" id="45S-gp-5Du"/>
+                                        <constraint firstItem="G2I-Km-kja" firstAttribute="top" secondItem="eTE-bj-GCn" secondAttribute="topMargin" constant="2" id="At3-3a-UDn"/>
+                                        <constraint firstItem="x8Z-o1-aJn" firstAttribute="top" secondItem="eTE-bj-GCn" secondAttribute="top" constant="2" id="CD5-yN-hov"/>
+                                        <constraint firstItem="G2I-Km-kja" firstAttribute="leading" secondItem="x8Z-o1-aJn" secondAttribute="trailing" constant="20" id="asR-AI-xH5"/>
+                                        <constraint firstItem="G2I-Km-kja" firstAttribute="bottom" secondItem="eTE-bj-GCn" secondAttribute="bottomMargin" constant="2" id="cff-CZ-qIm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="G2I-Km-kja" secondAttribute="trailing" constant="10" id="ctK-u5-nIz"/>
+                                        <constraint firstAttribute="bottom" secondItem="x8Z-o1-aJn" secondAttribute="bottom" constant="2" id="nCe-jf-BdC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="iconView" destination="x8Z-o1-aJn" id="QNb-sw-31N"/>
+                                    <outlet property="label" destination="G2I-Km-kja" id="WK7-xC-dao"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="gkV-ZT-87H" id="klI-dJ-ck1"/>
+                            <outlet property="delegate" destination="gkV-ZT-87H" id="DWq-D2-pfU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeR-bF-2mP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3588" y="922"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xlj-i8-25u">

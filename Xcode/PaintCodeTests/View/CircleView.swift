@@ -16,7 +16,7 @@ protocol CircleViewDelegate {
     func didCompleteAnimation()
 }
 
-@IBDesignable class CircleView: UIView {
+class CircleView: UIView {
     
     // MARK: - Properties
 
