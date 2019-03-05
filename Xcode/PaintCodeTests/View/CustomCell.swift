@@ -9,9 +9,33 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
+    
+    // MARK: - Public  Properties
+    
+    // Option that should currently be displayed. Default is .star (for no particular reason).
+    var option: OptionsView.Option = .star {
+        didSet {
+            iconView.currentOption = option
+            updateLabelText()
+        }
+    }
 
-    // MARK: - Properties
+    // MARK: - Private Properties
 
-    @IBOutlet weak var iconView: UIView!
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet private weak var iconView: OptionsView!
+    @IBOutlet private weak var label: UILabel!
+}
+
+// MARK: - Private
+
+private extension CustomCell {
+    
+    func updateLabelText() {
+        switch option {
+        case .star:
+            label.text = "Star"
+        case .tree:
+            label.text = "Tree"
+        }
+    }
 }

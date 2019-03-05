@@ -24,22 +24,16 @@ class TableViewController: UITableViewController {
         var cell = UITableViewCell()
 
         if let customCell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath) as? CustomCell {
-            cell = customCell
-
-            // Icon from PaintCode. In this example I'll be using two different icons, that's why I first create this
-            // placeholder `UIView`.
-            var icon = UIView(frame: customCell.iconView.frame)
-
+            
+            // Logic around which option to display
             if indexPath.row < 20 {
-                icon = StarView(frame: icon.frame)
-                customCell.label.text = "Star"
-
+                customCell.option = .star
             } else {
-                icon = TreeView(frame: icon.frame)
-                customCell.label.text = "Tree"
+                customCell.option = .tree
             }
-
-            customCell.iconView.addSubview(icon)
+            
+            // Update the cell to be returned.
+            cell = customCell
         }
 
         return cell
