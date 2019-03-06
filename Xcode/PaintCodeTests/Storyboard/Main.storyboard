@@ -93,15 +93,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-sd-zlQ" customClass="TextButton" customModule="PaintCodeTests" customModuleProvider="target">
-                                <rect key="frame" x="112" y="303" width="150" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-sd-zlQ" customClass="TextButton" customModule="PaintCodeTests" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="273.5" width="300" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="31k-Be-xGz"/>
+                                    <constraint firstAttribute="width" constant="300" id="VL9-IE-v6d"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="text" value="Hello Button!"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wed-sd-zlQ" firstAttribute="centerY" secondItem="MeF-HC-l9v" secondAttribute="centerY" id="9rX-Pl-cGR"/>
+                            <constraint firstItem="wed-sd-zlQ" firstAttribute="centerX" secondItem="MeF-HC-l9v" secondAttribute="centerX" id="o4H-FI-vvp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-us-mKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
