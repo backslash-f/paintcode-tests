@@ -51,25 +51,25 @@
                                             <segue destination="Ggg-rA-iTE" kind="show" identifier="showButtonHighlightTest" id="eIE-N6-6Hh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-GF-idZ" userLabel="Test Dynamic Stroke">
-                                        <rect key="frame" x="34.5" y="200" width="141" height="30"/>
-                                        <state key="normal" title="Test Dynamic Stroke"/>
-                                        <connections>
-                                            <segue destination="aVr-dL-ZLL" kind="show" identifier="showDynamicStrokeTest" id="a7m-yb-h9X"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-Xq-X3N" userLabel="Test Clockwise Animation">
-                                        <rect key="frame" x="17" y="250" width="176" height="30"/>
+                                        <rect key="frame" x="17" y="200" width="176" height="30"/>
                                         <state key="normal" title="Test Clockwise Animation"/>
                                         <connections>
                                             <segue destination="thN-Zr-RuG" kind="show" identifier="showClockwiseTest" id="n0q-TJ-gBF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-O9-da8">
-                                        <rect key="frame" x="0.0" y="300" width="210" height="30"/>
+                                        <rect key="frame" x="0.0" y="250" width="210" height="30"/>
                                         <state key="normal" title="Test Custom Cell in Table View"/>
                                         <connections>
                                             <segue destination="gkV-ZT-87H" kind="show" identifier="showCustomCellTest" id="Jsw-La-eaV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-GF-idZ" userLabel="Test Dynamic Stroke">
+                                        <rect key="frame" x="34.5" y="300" width="141" height="30"/>
+                                        <state key="normal" title="Test Dynamic Stroke"/>
+                                        <connections>
+                                            <segue destination="aVr-dL-ZLL" kind="show" identifier="showDynamicStrokeTest" id="a7m-yb-h9X"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -133,19 +133,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-mf-tRT" customClass="CustomUIButton" customModule="PaintCodeTests" customModuleProvider="target">
-                                <rect key="frame" x="142.5" y="288.5" width="90" height="90"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="1pM-2u-HWU"/>
-                                    <constraint firstAttribute="height" constant="90" id="eWM-XQ-cWY"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZOO-hX-NsR" userLabel="Buttons Stack View">
+                                <rect key="frame" x="142.5" y="251" width="90" height="165"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-mf-tRT" customClass="CustomUIButton" customModule="PaintCodeTests" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="1pM-2u-HWU"/>
+                                            <constraint firstAttribute="height" constant="90" id="eWM-XQ-cWY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUd-h8-6qp" customClass="CustomUIButton" customModule="PaintCodeTests" customModuleProvider="target">
+                                        <rect key="frame" x="22.5" y="120" width="45" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="45" id="BLH-LP-KCv"/>
+                                            <constraint firstAttribute="height" constant="45" id="Ldo-UH-dl0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MB6-mf-tRT" firstAttribute="centerY" secondItem="Kaa-2v-dnQ" secondAttribute="centerY" id="0wd-Ms-Vd1"/>
-                            <constraint firstItem="MB6-mf-tRT" firstAttribute="centerX" secondItem="Kaa-2v-dnQ" secondAttribute="centerX" id="OUa-n2-m3P"/>
+                            <constraint firstItem="ZOO-hX-NsR" firstAttribute="centerX" secondItem="Kaa-2v-dnQ" secondAttribute="centerX" id="OwC-qk-CvW"/>
+                            <constraint firstItem="ZOO-hX-NsR" firstAttribute="centerY" secondItem="Kaa-2v-dnQ" secondAttribute="centerY" id="Y5d-cm-UQN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SQr-sk-MKs"/>
@@ -459,6 +472,9 @@
     </scenes>
     <designables>
         <designable name="MB6-mf-tRT">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="eUd-h8-6qp">
             <size key="intrinsicContentSize" width="30" height="34"/>
         </designable>
         <designable name="wed-sd-zlQ">
