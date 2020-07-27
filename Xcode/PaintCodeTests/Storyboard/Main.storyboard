@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DK0-Uu-XrP">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,48 +21,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-jc-ZcQ">
-                                <rect key="frame" x="82.5" y="193.5" width="210" height="280"/>
+                                <rect key="frame" x="82.5" y="168.5" width="210" height="330"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-qr-vyq">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="God-qr-vyq">
                                         <rect key="frame" x="59.5" y="0.0" width="91" height="30"/>
                                         <state key="normal" title="Test Collision"/>
                                         <connections>
-                                            <segue destination="3o9-9N-m9o" kind="show" id="IOS-ev-5Bc"/>
+                                            <segue destination="3o9-9N-m9o" kind="show" identifier="showCollisionTest" id="IOS-ev-5Bc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-ea-c0S">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4c0-ea-c0S">
                                         <rect key="frame" x="34.5" y="50" width="141" height="30"/>
                                         <state key="normal" title="Test Dynamic Colors"/>
                                         <connections>
-                                            <segue destination="du8-3p-Jqr" kind="show" id="g8w-IC-W2P"/>
+                                            <segue destination="du8-3p-Jqr" kind="show" identifier="showDynamicColorsTest" id="g8w-IC-W2P"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-IS-yMB" userLabel="Test Button Text">
-                                        <rect key="frame" x="49" y="100" width="112" height="30"/>
-                                        <state key="normal" title="Test Button Text"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8B-IS-yMB" userLabel="Test Button Text">
+                                        <rect key="frame" x="42.5" y="100" width="125" height="30"/>
+                                        <state key="normal" title="Test Button + Text"/>
                                         <connections>
-                                            <segue destination="raa-v1-uIT" kind="show" id="9f3-lb-kYd"/>
+                                            <segue destination="raa-v1-uIT" kind="show" identifier="showTextButtonTest" id="9f3-lb-kYd"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-GF-idZ" userLabel="Test Dynamic Stroke">
-                                        <rect key="frame" x="34.5" y="150" width="141" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjg-vo-VWE" userLabel="Test Button Highlight">
+                                        <rect key="frame" x="32.5" y="150" width="145" height="30"/>
+                                        <state key="normal" title="Test Button Highlight"/>
+                                        <connections>
+                                            <segue destination="Ggg-rA-iTE" kind="show" identifier="showButtonHighlightTest" id="eIE-N6-6Hh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAB-GF-idZ" userLabel="Test Dynamic Stroke">
+                                        <rect key="frame" x="34.5" y="200" width="141" height="30"/>
                                         <state key="normal" title="Test Dynamic Stroke"/>
                                         <connections>
-                                            <segue destination="aVr-dL-ZLL" kind="show" id="a7m-yb-h9X"/>
+                                            <segue destination="aVr-dL-ZLL" kind="show" identifier="showDynamicStrokeTest" id="a7m-yb-h9X"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-Xq-X3N" userLabel="Test Clockwise Animation">
-                                        <rect key="frame" x="17.5" y="200" width="175" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-Xq-X3N" userLabel="Test Clockwise Animation">
+                                        <rect key="frame" x="17" y="250" width="176" height="30"/>
                                         <state key="normal" title="Test Clockwise Animation"/>
                                         <connections>
-                                            <segue destination="thN-Zr-RuG" kind="show" id="n0q-TJ-gBF"/>
+                                            <segue destination="thN-Zr-RuG" kind="show" identifier="showClockwiseTest" id="n0q-TJ-gBF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-O9-da8">
-                                        <rect key="frame" x="0.0" y="250" width="210" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOh-O9-da8">
+                                        <rect key="frame" x="0.0" y="300" width="210" height="30"/>
                                         <state key="normal" title="Test Custom Cell in Table View"/>
                                         <connections>
-                                            <segue destination="gkV-ZT-87H" kind="show" id="Jsw-La-eaV"/>
+                                            <segue destination="gkV-ZT-87H" kind="show" identifier="showCustomCellTest" id="Jsw-La-eaV"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,7 +99,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-sd-zlQ" customClass="TextButton" customModule="PaintCodeTests" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wed-sd-zlQ" customClass="TextButton" customModule="PaintCodeTests" customModuleProvider="target">
                                 <rect key="frame" x="37.5" y="273.5" width="300" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="31k-Be-xGz"/>
@@ -114,6 +120,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-us-mKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3588" y="-199"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CwL-Gg-4rA">
+            <objects>
+                <viewController id="Ggg-rA-iTE" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8OG-0k-YMS"/>
+                        <viewControllerLayoutGuide type="bottom" id="B7s-eZ-cfQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kaa-2v-dnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-mf-tRT" customClass="CustomUIButton" customModule="PaintCodeTests" customModuleProvider="target">
+                                <rect key="frame" x="142.5" y="288.5" width="90" height="90"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="1pM-2u-HWU"/>
+                                    <constraint firstAttribute="height" constant="90" id="eWM-XQ-cWY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MB6-mf-tRT" firstAttribute="centerY" secondItem="Kaa-2v-dnQ" secondAttribute="centerY" id="0wd-Ms-Vd1"/>
+                            <constraint firstItem="MB6-mf-tRT" firstAttribute="centerX" secondItem="Kaa-2v-dnQ" secondAttribute="centerX" id="OUa-n2-m3P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SQr-sk-MKs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vdc-2g-ycA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4407" y="-199"/>
         </scene>
         <!--Star View Controller-->
         <scene sceneID="MVv-sm-We0">
@@ -186,14 +225,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="3bu-ol-apd" customClass="CustomCell" customModule="PaintCodeTests" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3bu-ol-apd" id="eTE-bj-GCn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8Z-o1-aJn" customClass="OptionsView" customModule="PaintCodeTests" customModuleProvider="target">
-                                            <rect key="frame" x="10" y="2" width="40" height="40"/>
+                                            <rect key="frame" x="10" y="2" width="40" height="40.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="40" id="2T4-tw-W5R"/>
@@ -201,7 +240,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-Km-kja">
-                                            <rect key="frame" x="70" y="13" width="279" height="20.5"/>
+                                            <rect key="frame" x="70" y="13" width="279" height="22.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -239,7 +278,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DK0-Uu-XrP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ftW-XF-cg2">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -337,21 +376,21 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-cU-N9Q" userLabel="Buttons Stack View">
                                 <rect key="frame" x="56" y="524.5" width="263" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-91-xjO" userLabel="Color01">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoY-91-xjO" userLabel="Color01">
                                         <rect key="frame" x="0.0" y="0.0" width="74.5" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorButtonPressed:" destination="du8-3p-Jqr" eventType="touchUpInside" id="iZJ-4p-CGj"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3j-P3-aUQ" userLabel="Color02">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3j-P3-aUQ" userLabel="Color02">
                                         <rect key="frame" x="94.5" y="0.0" width="74" height="44"/>
                                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <action selector="colorButtonPressed:" destination="du8-3p-Jqr" eventType="touchUpInside" id="TPc-ad-EvB"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-UY-24S" userLabel="Color03">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-UY-24S" userLabel="Color03">
                                         <rect key="frame" x="188.5" y="0.0" width="74.5" height="44"/>
                                         <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -418,4 +457,17 @@
             <point key="canvasLocation" x="1713" y="922"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="MB6-mf-tRT">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="wed-sd-zlQ">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
